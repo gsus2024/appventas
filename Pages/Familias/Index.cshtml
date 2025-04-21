@@ -1,0 +1,25 @@
+﻿@page
+@model MyApp.Namespace.IndexModel
+@{
+}
+
+<div class="container">
+    <h2>Listado de Familias</h2>
+    <hr>
+    <table class="table">
+        <thead>
+            <tr>
+                <td>Id</td>
+                <td>Nombre</td>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach(var f in Model.Familias){
+            <tr>
+                <td>@f.Id</td>
+                <td>@f.Nombre</td>
+            </tr>
+            }
+        </tbody>
+    </table>
+</div>
